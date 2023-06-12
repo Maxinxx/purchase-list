@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="name">购物清单</header>
+    <div class="divider"></div>
+    <ul id="list-container"></ul>
+    <button class="add-item" onclick="addItem()">+</button>
+    <form id="edit-form">
+      <div class="close-btn" onclick="hideForm()">X</div>
+      <div class="form-item">
+        <label for="name">名称</label>
+        <input id="name" name="name" type="text" />
+      </div>
+      <div class="form-item">
+        <label for="count">数量</label>
+        <input id="count" name="count" type="number" />
+      </div>
+      <button id="submit-btn">确定</button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
